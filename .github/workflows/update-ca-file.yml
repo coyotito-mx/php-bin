@@ -2,8 +2,8 @@ name: Fetch Latest CA File
 
 on:
   schedule:
-    # This will run daily at 00:00 UTC.
-    - cron:  '0 0 * * *'
+    # This will run every Sunday at midnight UTC
+    - cron:  '0 0 * * 0'
   workflow_dispatch:
 
 permissions:
